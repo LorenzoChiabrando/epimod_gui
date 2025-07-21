@@ -49,7 +49,7 @@ RUN R -e "\
   cat('\n-- Check remotes install: --\n');\
   library(remotes);\
   cat('remotes path:', system.file(package='remotes'), '\\n');\
-  remotes::install_github('qBioTurin/epimod', ref='epimod_pFBA', dependencies=TRUE);\
+  remotes::install_github('https://github.com/LorenzoChiabrando/epimod_gui.git', ref='main', dependencies=TRUE);\
 "
 
 # Crea le cartelle necessarie con i permessi adeguati

@@ -20,7 +20,7 @@ RUN R -e "\
              repos='https://cloud.r-project.org');\
   cat('\n-- Check remotes install: --\n');\
   cat('remotes path:', system.file(package='remotes'), '\\n');\
-  remotes::install_github('qBioTurin/epimod', ref='epimod_pFBA', dependencies=TRUE);\
+  remotes::install_github('https://github.com/LorenzoChiabrando/epimod_gui.git', ref='main', dependencies=TRUE);\
 "
 
 # 4) Runtime directories

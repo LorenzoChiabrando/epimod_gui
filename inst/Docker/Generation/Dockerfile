@@ -58,7 +58,7 @@ RUN wget -O lp_solve.tar.gz \
 # -------- GreatSPN ----------------------------------------------------------
 RUN mkdir -p ~/GreatSPN && cd ~/GreatSPN && \
     for n in {1..5}; do \
-      git clone https://github.com/qBioTurin/SOURCESgreatspn.git SOURCES && break || sleep 10; \
+      git clone https://github.com/LorenzoChiabrando/SOURCES.git SOURCES && break || sleep 10; \
     done && \
     cd SOURCES && \
     make ${MAKE_ARGS} -k derived_objects && \

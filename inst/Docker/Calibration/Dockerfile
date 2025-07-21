@@ -30,7 +30,7 @@ RUN mkdir -p /home/docker/scratch && chmod 777 /home/docker/scratch && \
     mkdir -p /home/docker/data && chmod 777 /home/docker/data
 
 # Installa il pacchetto 'epimod' da GitHub utilizzando remotes
-RUN R -e "remotes::install_github('qBioTurin/epimod', ref='epimod_pFBA', dependencies=TRUE)"
+RUN R -e "remotes::install_github('https://github.com/LorenzoChiabrando/epimod_gui.git', ref='main', dependencies=TRUE)"
 
 # Salva l'elenco dei pacchetti installati (utile per il debug)
 RUN dpkg -l > /PKG_LIST
